@@ -1,0 +1,93 @@
+body{
+    margin: 0;
+
+    font-family: 'Syncopate', sans-serif;
+    font-size: 14px; 
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+p{
+    margin: 0 0 10px 0;
+}
+
+.header{
+    width: 100%;
+ position: absolute;
+top: 0;
+left: 0;
+z-index: 10;
+background: #000;
+padding: 7px 0;
+box-shadow:0 0 5px 2px rgba(252, 252, 252, 0.6) ;
+}
+
+.container{
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.logomenu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+    border-bottom: 1px solid #000;
+}
+
+.logo-img{
+    width: 150px;
+    height: 60px;
+}
+
+.menu {
+    display: flex;
+
+    text-align: center;  
+}
+
+.nav {
+    font-family: 'Syncopate', sans-serif;
+    color: whitesmoke;
+    text-transform: uppercase;
+    text-decoration: none;
+    width: 110px;
+    opacity: 0.75;
+    font-size: 15px;
+    transition: 0.2s linear;
+    
+    margin-left: 20px;
+}
+
+.bio {
+    text-decoration: underline;
+    opacity: 1;
+    transition: 0.2s linear;
+    color: #000;
+    background:whitesmoke;
+    padding: 2px;
+    border-radius: 1px; 
+}
+
+.nav:first-child{
+    margin-left: 0;
+}
+
+.nav:hover{
+    text-decoration: underline;
+    opacity: 1;
+    transition: 0.2s linear;
+    color: #000;
+    background:whitesmoke;
+    padding: 2px;
+    border-radius: 1px;
+}

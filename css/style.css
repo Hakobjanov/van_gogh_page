@@ -1,0 +1,549 @@
+body {
+  margin: 0;
+
+  font-family: "Syncopate", sans-serif;
+  font-size: 14px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0 0 10px 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.header {
+  width: 100%;
+  background: #000;
+  padding: 7px 0;
+  box-shadow: 0 0 5px 2px rgba(252, 252, 252, 0.6);
+}
+
+.logomenu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border-bottom: 1px solid #000;
+}
+
+.logo-img {
+  width: 150px;
+  height: 60px;
+}
+
+.menu {
+  display: flex;
+
+  text-align: center;
+}
+
+.nav {
+  font-family: "Syncopate", sans-serif;
+  font-size: 15px;
+  color: whitesmoke;
+  text-transform: uppercase;
+  text-decoration: none;
+  width: 110px;
+  height: 20px;
+
+  opacity: 0.75;
+
+  transition: 0.2s linear;
+
+  margin-left: 20px;
+}
+
+.nav:first-child {
+  margin-left: 0;
+}
+.nav:hover {
+  text-decoration: underline;
+  opacity: 1;
+  transition: 0.2s linear;
+  color: #000;
+  background: whitesmoke;
+  padding: 2px;
+  border-radius: 1px;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 750px;
+  background: url(../img/3.jpg) center;
+
+  padding-top: 85px;
+  text-align: center;
+}
+
+.main-title {
+  font-family: "Suez One", serif;
+  margin: 0;
+
+  font-size: 65px;
+  letter-spacing: 5px;
+  color: whitesmoke;
+
+  font-weight: bold;
+
+  line-height: 1;
+}
+
+.intro-wrap {
+  width: 100%;
+  max-width: 970px;
+
+  margin: 0 auto;
+}
+
+.main-title .vin {
+  font-family: "Permanent Marker", cursive;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 45px;
+  letter-spacing: 25px;
+}
+
+.main-title .van {
+  font-family: "Syncopate", sans-serif;
+  font-size: 105px;
+}
+
+.main-subtitle {
+  font-family: "Permanent Marker", cursive;
+  font-size: 30px;
+  color: whitesmoke;
+  font-weight: normal;
+  text-transform: lowercase;
+}
+
+.button {
+  display: inline-block;
+  vertical-align: top;
+
+  border-radius: 1px;
+  border: 0;
+
+  font-family: "Syncopate", sans-serif;
+  font-size: 13px;
+  color: whitesmoke;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 13px 85px;
+  margin-top: 25px;
+}
+
+.button-intro {
+  background-color: black;
+  transition: 0.3s;
+}
+
+.button-intro:hover {
+  color: black;
+  background-color: whitesmoke;
+  box-shadow: 0 0 5px 3px rgba(252, 252, 252, 0.6);
+  transition: 0.3s;
+}
+
+.block-top {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1170px;
+  text-align: center;
+
+  margin-top: 65px;
+}
+
+.block-title {
+  font-family: "Permanent Marker", cursive;
+  text-transform: uppercase;
+  font-size: 25px;
+}
+
+.block-title:after {
+  content: "";
+  display: block;
+  width: 970px;
+  height: 2px;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  background-color: black;
+}
+
+.facts {
+  display: flex;
+  margin-top: 55px;
+}
+
+.facts-image {
+  height: 82px;
+  width: 85px;
+  margin-bottom: 25px;
+}
+
+.facts-item {
+  width: 33.333333%;
+  padding: 0 25px;
+  text-align: center;
+}
+
+.facts-title {
+  font-family: "Permanent Marker", cursive;
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.facts-text {
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.paints {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  margin-top: 55px;
+}
+
+.paint-item {
+  width: 378px;
+  height: 280px;
+}
+
+.wrap {
+  position: relative;
+
+  transition: 1s;
+}
+
+.paint-name {
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  color: white;
+  text-align: center;
+  width: 380px;
+  font-size: 24px;
+  font-weight: bold;
+
+  transition: 1s;
+}
+
+.wrap:hover {
+  z-index: 10;
+  transform: scale(1.4);
+
+  transition: 1s;
+}
+
+.wrap:first-child:hover {
+  transform: scale(1.4) translate(55px, 0px);
+}
+
+.wrap:nth-child(4n):hover {
+  transform: scale(1.4) translate(-55px, 0px);
+}
+
+.wrap:nth-child(5n):hover {
+  transform: scale(1.4) translate(55px, 0px);
+}
+
+.wrap:last-child:hover {
+  transform: scale(1.4) translate(-55px, 0px);
+}
+
+.wrap:hover .paint-name {
+  display: none;
+  transition: 1s;
+}
+/* .paint-item{
+ width: 25%;
+height: 300px;
+ position: relative;
+border: 2px solid rgba(31, 30, 30);
+border-radius: 2px;
+ transition: 1s;
+
+}
+
+.paint-item:hover {
+    z-index: 10; 
+    transform: scale(1.4); 
+    
+    transition: 1s;
+   }
+
+   .paint-item:first-child:hover{
+    transform: scale(1.4) translate(55px, 0px); 
+}
+
+.paint-item:nth-child(4n):hover{
+    transform: scale(1.4) translate(-55px, 0px); 
+}
+
+.paint-item:nth-child(5n):hover{
+    transform: scale(1.4) translate(55px, 0px); 
+}
+
+.paint-item:last-child:hover{
+    transform: scale(1.4) translate(-55px, 0px); 
+} */
+
+/* .paint-title{
+    position: absolute;
+    color:whitesmoke;
+    font-size: 16px;
+    top:1666px;
+    left: 0;
+} */
+
+.infuencers {
+  margin: 55px 0;
+}
+
+.influ-inner {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.masters {
+  margin-top: 55px;
+  width: 25%;
+
+  padding: 0 10px;
+
+  margin-bottom: 20px;
+}
+
+.master-photo {
+  display: block;
+  max-width: 100%;
+  width: 325px;
+  height: 375px;
+}
+
+.master-name {
+  font-size: 16px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.master-story {
+  font-size: 14px;
+  line-height: 1;
+}
+.name {
+  font-family: "Permanent Marker", cursive;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.ref a {
+  display: inline-block;
+  vertical-align: top;
+
+  border-radius: 1px;
+  border: 0;
+
+  background: #000;
+  font-size: 10px;
+  font-weight: bold;
+  color: whitesmoke;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 5px 45px;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+
+.ref a:hover {
+  border-radius: 2px;
+  background-color: #fff;
+  color: black;
+  box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.5);
+  transition: 0.3s;
+}
+
+.quote {
+  overflow: hidden;
+  background-color: #000;
+  margin-top: 55px;
+}
+
+.quote-inner {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.quote-photo {
+  width: 50%;
+  height: 475px;
+
+  position: relative;
+}
+
+.quote-img {
+  position: absolute;
+
+  top: 0;
+  left: -214px;
+  z-index: 10;
+}
+
+.qoute-content {
+  height: 475px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  padding-left: 50px;
+}
+
+.quote-text {
+  font-size: 20px;
+  color: whitesmoke;
+  font-style: italic;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.quote-sign {
+  font-family: "Permanent Marker", cursive;
+  color: whitesmoke;
+  font-size: 20px;
+
+  z-index: 10;
+  padding-top: 15px;
+  text-align: right;
+}
+
+.watch {
+  text-align: center;
+  margin-top: 55px;
+}
+
+.dirname p {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.movie-btn {
+  display: inline-block;
+  vertical-align: top;
+
+  border-radius: 1px;
+
+  background-color: #000;
+  font-family: "Syncopate", sans-serif;
+  font-size: 13px;
+  color: whitesmoke;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 12px 105px;
+  margin-top: 35px;
+  transition: 0.3s;
+}
+
+.movie-btn:hover {
+  border-radius: 2px;
+  background-color: #fff;
+  color: black;
+  font-weight: bold;
+  box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.5);
+  transition: 0.3s;
+}
+
+.footer {
+  margin-top: 55px;
+  padding: 55px 0 0 0;
+
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+.footer-inner {
+  display: flex;
+  flex-wrap: wrap;
+
+  border-bottom: 1px solid #fff;
+  padding-bottom: 50px;
+}
+
+.footer-block {
+  width: 33.33333%;
+
+  text-align: center;
+}
+
+.footer-title {
+  color: rgba(252, 252, 252, 0.6);
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+.address {
+  color: rgba(252, 252, 252, 0.6);
+  font-style: normal;
+  font-size: 12px;
+  padding-top: 10px;
+}
+
+.address p {
+  padding: 0;
+  margin: 0;
+}
+
+.share {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.share-item {
+  width: 30px;
+  height: 30px;
+  margin-top: 10px;
+  opacity: 0.6;
+}
+
+.share-item:hover {
+  opacity: 1;
+  z-index: 100;
+}
+
+.copyright {
+  margin-top: 10px;
+  text-align: center;
+  color: rgba(252, 252, 252, 0.6);
+}
